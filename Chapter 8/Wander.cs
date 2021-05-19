@@ -34,6 +34,7 @@ public class Wander : MonoBehaviour
 
         circleCollider = GetComponent<CircleCollider2D>();
         rb2d = GetComponent<Rigidbody2D>();
+        endPosition = rb2d.position;
 
         StartCoroutine(WanderRoutine());
     }
